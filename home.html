@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang = "en" ng-app = "myApp">
 	<head>
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <script src="lib/angular/angular.min.js"></script>
+	    <script src="js/controllers.js"></script>
 	    <link href="css/normalize.css" rel="stylesheet">
 	    <link href="css/home.css" rel="stylesheet">
+	    
 	    <title>Cloudpin</title>
 	</head>
 
@@ -22,9 +26,9 @@
 				<div class = "col-5">
 					<img src = "img/Shape2.png" style = "cursor:pointer;">
 				</div>
-				<div class = "col-5">
+				<!-- <div class = "col-5">
 					<img src = "img/Shape3.png" style = "cursor:pointer;">
-				</div>
+				</div> -->
 				<div class = "col-5">
 					<img src = "img/Shape4.png" style = "cursor:pointer;">
 				</div>
@@ -44,5 +48,23 @@
             	</div> 		
 			</form>
 		</div>
+
+    	<div class="container4" ng-controller = "MyController">
+			<ul class="pinlist">
+			    <ul class="pin cf" ng-repeat="item in pins">
+			
+			    		<img ng-src="img/{{item.shortname}}.png" class = "imgPin">
+
+			  
+			        	<h2 class = "pinName">{{item.name}}</h2>
+			        	<img ng-src="img/{{item.postedBy}}.png" class = "postedByImg">
+
+			        	<span class = "postedBy">Posted by {{item.postedBy}}</span>
+			   <span class = "time">{{item.time}}</span>
+			    </ul>
+	  		</ul>
+		</div>
+
+
 	</body>
 </html>

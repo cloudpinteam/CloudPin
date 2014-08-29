@@ -1,13 +1,13 @@
 .container1 {
 	text-align:center;
 	background-color: #5873CB;
-	padding:20px 0px;
+	padding:10px 0px;
 }
 
 .container3 {
 	text-align:center;
 	background-color: #F8F8F8;
-	padding:20px 150px;
+	padding:10px 50px;
 	height:50px;
 }
 
@@ -15,6 +15,10 @@
 	text-align:center;
 	background-color: #EDEEF3;
 	padding:15px 0px;
+}
+
+.container4 {
+	padding:0px 0px;
 }
 
 #searchPIN {
@@ -27,7 +31,7 @@
 	-webkit-border-bottom-right-radius:10px;
 	border:none;
 	height:60px;
-	width:570px;
+	width:55%;
 	font-size:27px;
 	padding-left:30px;
 	margin-left:-4px;
@@ -53,10 +57,93 @@
 }
 
 .col-5 {
-	width:20%;
+	width:25%;
 	float:left;
 }
 
+.row {
+	margin-top: 10px;
+}
+
+
+
+
+
+
+.pinlist {
+	background: #fff;
+	margin: 0 auto;
+	margin-bottom: 20px;
+/*	z-index: 10;*/
+}
+
+.imgPin {
+  display: block;
+  float: left;
+  width: 100px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  clear:both;
+  margin-left:10%;
+}
+
+
+.pinlist ul:hover {
+  background: #F8F9FC;
+  cursor:pointer;
+
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+
+.postedBy {
+	float:left;
+	margin-left: 10px;
+	margin-top: -20px;
+	font-size:27px;
+
+}
+
+.pinName {
+	display:block;
+	position:relative;
+	/*float:left;*/
+	font-size:32px;
+}
+
+.postedByImg {
+/*	clear:both;*/
+	display:block;
+	position:relative;
+	max-width:30px;
+	float:left;
+	margin-top: -20px;
+
+
+
+}
+
+.time {
+	display: inline-block;
+	position:relative;
+	font-size:22px;
+	float:right;
+	margin-top:-50px;
+	margin-right:8%;
+}
 
 
 
