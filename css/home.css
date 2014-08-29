@@ -65,15 +65,10 @@
 	margin-top: 10px;
 }
 
-
-
-
-
-
 .pinlist {
 	background: #fff;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 /*	z-index: 10;*/
 }
 
@@ -145,6 +140,8 @@
 	margin-right:8%;
 }
 
-
+.pin {
+	border-bottom: 1px solid #E3E3E3;
+}
 
 
