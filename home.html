@@ -44,14 +44,14 @@
 				<div id = "bkg">
 					<input type = "image" src = "img/Icon 2.png" id = "searchImage">
 				</div>	
-            		<input type="text" placeholder="Search My Pins" id = "searchPIN"/>
+            		<input ng-model= "query" type="text" placeholder="Search My Pins" id = "searchPIN"/>
             	</div> 		
 			</form>
 		</div>
 
     	<div class="container4" ng-controller = "MyController">
 			<ul class="pinlist">
-			    <ul class="pin cf" ng-repeat="item in pins">
+			    <ul class="pin cf" ng-repeat="item in pins | filter: query ">
 		    		<img ng-src="img/{{item.shortname}}.png" class = "imgPin">
 		        	<h2 class = "pinName">{{item.name}}</h2>
 		        	<img ng-src="img/{{item.postedBy}}.png" class = "postedByImg">
