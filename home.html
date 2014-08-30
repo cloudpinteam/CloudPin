@@ -4,12 +4,10 @@
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
 	    <script src="lib/angular/angular.min.js"></script>
 	    <script src="js/controllers.js"></script>
 	    <link href="css/normalize.css" rel="stylesheet">
 	    <link href="css/home.css" rel="stylesheet">
-	    
 	    <title>Cloudpin</title>
 	</head>
 
@@ -49,14 +47,16 @@
 			</form>
 		</div>
 
+
+
     	<div class="container4" ng-controller = "MyController">
 			<ul class="pinlist">
-			    <ul class="pin cf" ng-repeat="item in pins | filter: query ">
+			    <ul class="pin cf" ng-repeat="item in pins | filter: query | orderBy: 'time':true ">
 		    		<img ng-src="img/{{item.shortname}}.png" class = "imgPin">
 		        	<h2 class = "pinName">{{item.name}}</h2>
 		        	<img ng-src="img/{{item.postedBy}}.png" class = "postedByImg">
 		        	<span class = "postedBy">Posted by {{item.postedBy}}</span>
-		   			<span class = "time">{{item.time}}</span>
+		   			<span class = "time">{{item.timeDifference}}</span>
 			    </ul>
 	  		</ul>
 		</div>

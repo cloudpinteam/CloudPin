@@ -3,25 +3,33 @@
     "name":"Hillsong",
     "shortname":"Hillsong",
     "postedBy":"Jessica",
-    "time":"1m"
+    "time":"2014-08-30 13:59:00",
+    "timeDifference": "1m"
     
   },
   {
     "name":"Family Photos",
     "shortname":"Family_Photos",
     "postedBy":"Mike",
-    "time":"9m"
+    "time":"2014-08-30 13:51:00",
+    "timeDifference": "9m"
   },
+
+
+
   {
     "name":"Business Documents",
     "shortname":"Business_Documents",
     "postedBy":"Marcus",
-    "time":"23h"
+    "time":"2014-08-30 12:00:00",
+    "timeDifference": "2h"
   },
   {
     "name":"Atlanta Tech News",
     "shortname":"Atlanta_Tech_News",
     "postedBy":"John",
-    "time":"2d"
+    "time":"2014-08-28",
+    "timeDifference": "2d"
   }
+
 ]
